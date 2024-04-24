@@ -12,6 +12,8 @@ Our project utilized a comprehensive dataset from Kaggle on diabetes, comprising
 Problem Definition:
 What are the top risk factors contributing to the development of  diabetes across different age groups.
 
+
+
 2. Set the Stage
 
 Collecting & cleaning of data
@@ -19,6 +21,8 @@ Collecting & cleaning of data
 Remove all rows where these variables = 0  
 
 EDA to obtain initial data-driven insights from the dataset.
+
+
 
 
 3. Core Analysis
@@ -30,6 +34,7 @@ The objective was to identify the key factors that contribute to diabetes outcom
 We trained our models on a set of predictors including 'Pregnancies', 'Glucose', ‘BMI’, 'BloodPressure', 'SkinThickness', 'Insulin', and 'Age' with these supervised learning models for categorical prediction.
 While linear regression was NOT used due to its suitability for continuous data, not for predicting a binary outcome 
 Decision Trees provides a clear and concise visualization of the decision-making process, while Random Forests leveraged the power of multiple trees to enhance prediction accuracy and reduce overfitting and gave us insight into feature importance.
+
 
 
 	Part I: Using Decision Tree
@@ -48,6 +53,7 @@ An increase in the false positive rate on the test set, indicating a trade-off w
 The increased True Positive Rate (TPR) (sensitivity) is often considered more important in medical diagnostics than a low false positive rate because it is preferable to catch as many true cases as possible, even if some healthy patients are misclassified. However, the increased false positive rate suggests that the model's specificity has decreased, which may lead to more false alarms and potentially unnecessary follow-up treatments.
 
 Hence, increasing the tree depth improved the model's ability to identify individuals with diabetes (as shown by the increased TPR and accuracy), but it also led to a higher number of false alarms (as shown by the increased false positive rate). This illustrates the precision-TPR trade-off in classification problems. ​
+
 
 
 	Part II : Using Random Forest
@@ -73,6 +79,8 @@ Random Forest works by creating multiple decision trees from different samples o
 
 Hence, we removed this age group from subsequent analysis.
 	Finally, we represented our findings in both a heatmap and a bar graph.
+
+ 
 
 4. Conclusion
    
