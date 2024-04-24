@@ -2,7 +2,7 @@
 
 FDDC Team 7
 
-Motivation
+1. Motivation
 Our project aims to find out what are the top risk factors contributing to the development of diabetes across different age groups. This is especially important with the rapidly increasing number of diabetes cases globally, so it is important for us to be able to detect diabetes. Recognizing that early detection and timely intervention can drastically alter the course of diabetes, we were driven to uncover the patterns that precede its development. Ultimately, our goal was to derive actionable insights that could guide healthcare providers in risk assessment and management, particularly targeting resources where they can make the most difference – an objective inspired by the transformative potential of data in health outcomes.
 
 Diabetes Dataset:
@@ -19,7 +19,7 @@ Remove all rows where these variables = 0
 EDA to obtain initial data-driven insights from the dataset.
 
 
-Core Analysis
+2. Core Analysis
 
 	Machine Learning Approaches for Diabetes Prediction:
 
@@ -48,7 +48,7 @@ The increased True Positive Rate (TPR) (sensitivity) is often considered more im
 Hence, increasing the tree depth improved the model's ability to identify individuals with diabetes (as shown by the increased TPR and accuracy), but it also led to a higher number of false alarms (as shown by the increased false positive rate). This illustrates the precision-TPR trade-off in classification problems. ​
 
 
-Part II : Using Random Forest
+	Part II : Using Random Forest
 
 Next, we used random forest algorithms. We first categorize the diabetes data by age and perform analysis on each age group using random forest algorithm.  We Train a RandomForestClassifier on the training data to predict the Outcome. Extract the feature importances from the trained RandomForestClassifier, which indicates the relative importance of each feature in predicting the 'Outcome'. Show result in horizontal bar chart with the factor with the most significant impact on predicting the outcome first. We Loop through each age group and perform analysis, calculating correlation matrix and feature importance for each age group. We found that there is an empty feature importance graph for the age group ‘61+’. 
 Choice of indicator: Feature Importance
@@ -71,7 +71,8 @@ Random Forest works by creating multiple decision trees from different samples o
 
 Hence, we removed this age group from subsequent analysis.
 	Finally, we represented our findings in both a heatmap and a bar graph.
-Conclusion
+
+4. Conclusion
 In conclusion, the outcome of our project was a comprehensive machine learning model capable of predicting diabetes risk across different age groups. By applying Random Forest classifiers, we derived a detailed view of the relative importance of various health indicators in relation to diabetes.
 
 The project addressed the original problem by identifying critical variables that influence the likelihood of diabetes in specific age groups. This was achieved by evaluating feature importances and assessing the predictive power of each variable.
