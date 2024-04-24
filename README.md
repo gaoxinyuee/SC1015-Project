@@ -3,6 +3,7 @@
 FDDC Team 7
 
 1. Motivation
+
 Our project aims to find out what are the top risk factors contributing to the development of diabetes across different age groups. This is especially important with the rapidly increasing number of diabetes cases globally, so it is important for us to be able to detect diabetes. Recognizing that early detection and timely intervention can drastically alter the course of diabetes, we were driven to uncover the patterns that precede its development. Ultimately, our goal was to derive actionable insights that could guide healthcare providers in risk assessment and management, particularly targeting resources where they can make the most difference – an objective inspired by the transformative potential of data in health outcomes.
 
 Diabetes Dataset:
@@ -11,7 +12,8 @@ Our project utilized a comprehensive dataset from Kaggle on diabetes, comprising
 Problem Definition:
 What are the top risk factors contributing to the development of  diabetes across different age groups.
 
-Set the Stage
+2. Set the Stage
+
 Collecting & cleaning of data
 
 Remove all rows where these variables = 0  
@@ -19,7 +21,7 @@ Remove all rows where these variables = 0
 EDA to obtain initial data-driven insights from the dataset.
 
 
-2. Core Analysis
+3. Core Analysis
 
 	Machine Learning Approaches for Diabetes Prediction:
 
@@ -73,6 +75,7 @@ Hence, we removed this age group from subsequent analysis.
 	Finally, we represented our findings in both a heatmap and a bar graph.
 
 4. Conclusion
+   
 In conclusion, the outcome of our project was a comprehensive machine learning model capable of predicting diabetes risk across different age groups. By applying Random Forest classifiers, we derived a detailed view of the relative importance of various health indicators in relation to diabetes.
 
 The project addressed the original problem by identifying critical variables that influence the likelihood of diabetes in specific age groups. This was achieved by evaluating feature importances and assessing the predictive power of each variable.
